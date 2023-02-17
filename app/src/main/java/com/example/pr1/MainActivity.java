@@ -76,4 +76,15 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "Debug");
         Log.v(TAG, "Verbode");
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        displayToast("onRestart");
+        Log.i(TAG, "InformationRestart");
+        Log.w(TAG, "Warning");
+        Log.e(TAG, "Error");
+        Log.d(TAG, "Debug");
+        Log.v(TAG, "Verbode");
+    }
 }
